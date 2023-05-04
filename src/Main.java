@@ -56,7 +56,7 @@ public class Main {
         for (int element : salaries) {
             avarageSalaries = avarageSalaries += element;
         }
-        System.out.println("Средняя сумма трат за месяц составила " + avarageSalaries / 30);
+        System.out.println("Средняя сумма трат за месяц составила " + avarageSalaries/30);
     }
 
     public static void task4() {
