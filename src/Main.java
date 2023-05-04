@@ -56,11 +56,11 @@ public class Main {
         for (int element : salaries) {
             avarageSalaries = avarageSalaries += element;
         }
-        System.out.println("Средняя сумма трат за месяц составила " + avarageSalaries/30);
+        System.out.println(" Средняя сумма трат за месяц составила " + avarageSalaries/30);
     }
 
     public static void task4() {
-        System.out.println("Задача 4");
+        System.out.println(" Задача 4");
         char[] reversFullName = {'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
         for (char i = (char) (reversFullName.length - 1); i < reversFullName.length; i--) {
             System.out.print(reversFullName[i]);
