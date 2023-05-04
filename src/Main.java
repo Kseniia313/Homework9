@@ -62,8 +62,9 @@ public class Main {
     public static void task4() {
         System.out.println("Задача 4");
         char[] reversFullName = {'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
-        for (char i = (char) (reversFullName.length - 1); i< reversFullName.length; i--) {
-        System.out.print(reversFullName[i]);}
+        for (char i = (char) (reversFullName.length - 1); i < reversFullName.length; i--) {
+            System.out.print(reversFullName[i]);
+        }
     }
 }
 
