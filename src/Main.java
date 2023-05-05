@@ -22,9 +22,6 @@ public class Main {
         System.out.println("Задача 1");
         int[] salaries = generateRandomArray();
         int sumSalaries = 0;
-//        for (int i = 0; i < salaries.length; i++) {
-//            sumSalaries = sumSalaries + salaries[i];
-//            System.out.println(+sumSalaries);
         for (int element : salaries)
             sumSalaries = sumSalaries += element;
         System.out.println(" Сумма затрат за месяц составила " + sumSalaries);
@@ -34,17 +31,13 @@ public class Main {
 
         System.out.println("Задача 2");
         int[] salaries = generateRandomArray();
-        int maxSalaries = -1;
-        for (int elementMax : salaries) {
-            if (elementMax > maxSalaries) {
-                maxSalaries = elementMax;
-            }
-        }
+        int maxSalaries = 1;
         int minSalaries = salaries[0];
-        for (int elementMin : salaries) {
-            if (elementMin < minSalaries) {
-                minSalaries = elementMin;
-            }
+        for (int element : salaries) {
+            if (element > maxSalaries)
+                maxSalaries = element;
+            else if (element < minSalaries)
+                minSalaries = element;
         }
         System.out.println("Минимальная сумма трат за день составила " + minSalaries + " рублей. Максимальная сумма трат за день составила " + maxSalaries + "рублей ");
     }
